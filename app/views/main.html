@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<ul class="nav nav-tabs">
+  <li class="active">
+    <a data-toggle="tab" href="#tabInputs">Inputs</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#tabEquipmentOutputs">Equipment Outputs</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#tabStreamOutputs">Stream Outputs</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#tabBlockCost">Block Cost</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#tabDescription">Description</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div id="tabInputs" class="tab-pane fade in active">
+    <iframe src="/views/inputs.html" width="550" height="500"></iframe>
+  </div>
+  <div id="tabEquipmentOutputs" class="tab-pane fade ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">Name &nbsp
+          <input type="text" {{BlockName}}>
+        </div>
+        <div class="col-sm-6 ">column 2</div>
+      </div>
+    </div>
+  </div>
+  <div id="tabStreamOutputs" class="tab-pane fade ">
+    <h3>Imprt Attempt</h3>
+    {{345 + 34}}
+    <p>Attempt to import using JS</p>
+    <div id="container">
+      <link rel="import" href="/views/inputs.html">
+    </div>
+  </div>
+  <div id="tabBlockCost" class="tab-pane fade "></div>
+  <div id="#tabDescription" class="tab-pane fade ">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+  <script>
+   var link = document.querySelector('link[rel="import"]');
+    
+        //Clone the <template> in the import.
+        var template = link.import.querySelector('template');
+        var clone = document.importNode(template.content, true);
+        document.querySelector('#container').appendChild(clone);
+        </script>
+</div>
+
+</html>

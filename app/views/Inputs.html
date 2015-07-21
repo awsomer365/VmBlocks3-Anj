@@ -1,0 +1,69 @@
+<template>
+    <div ng-controller="MainCtrl">
+        <div class="container">
+            <p>Resize the browser window to see the effect.</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="well well-red">Input type, 1 collum</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 box">
+                    <div class="well well-red">Name:
+                        <br>
+                        <input type="text" name="sName">
+                    </div>
+                </div>
+                <div class="col-sm-6 box">
+                    <div class="well well-red">
+                        <input type="radio" name="PowerType" />Flow
+                        <input type="number">KLB/HR
+                        <br>
+                        <input type="radio" name="PowerType" />Mechanical Power
+                        <input type="number">HP
+                        <hr>
+                        <input type="checkbox" id="Condensing1">&nbsp Hold Power Constant at Optimization</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 box">
+                    <div class="well well-red">Status:
+                        <br>
+                        <input type="radio" name="status">On
+                        <br>
+                        <input type="radio" name="status">Off
+                        <br>
+                        <input type="radio" name="status">Unavalible
+                        <br>
+                        <input type="radio" name="status">Slow Roll
+                        <br>
+                        <input type="radio" name="status">Fast Roll
+                        <br>
+                    </div>
+                </div>
+                <div class="col-sm-6 box">
+                    <div class="well well-red">
+                        <input type="radio" name="PowerType" />Flow
+                        <input type="number">KLB/HR
+                        <br>
+                        <input type="radio" name="PowerType" />Mechanical Power
+                        <input type="number">HP</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content-main">hellow yall</div>
+            <div class="content-secondary">goodbye</div>
+        </div>
+        <hr>Efficency:
+        <select name="EfficiencySelect">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <br>
+        <button>OK</button>
+        <button>Cancel</button>{{43 + 345}}
+        <link rel="stylesheet" href="../styles/main.css">
+    </div>
+</template>
